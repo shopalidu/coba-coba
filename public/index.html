@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamus Bahasa Tae' (Luwu) - Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kamus Bahasa Tae' (Luwu)</h1>
+
+        <!-- Search Section -->
+        <div class="section search-section">
+            <h2>Cari Kata</h2>
+            <div class="search-controls">
+                <input type="text" id="searchInput" placeholder="Masukkan kata...">
+                <select id="searchDirection">
+                    <option value="id-tae">Indonesia -> Tae'</option>
+                    <option value="tae-id">Tae' -> Indonesia</option>
+                </select>
+                <button id="searchBtn">Cari</button>
+            </div>
+            <div id="results" class="results-container">
+                <!-- Results will appear here -->
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Add Word Section -->
+        <div class="section add-section">
+            <h2>Tambah Kosakata Baru</h2>
+            <p>Bantu lengkapi kamus ini dengan menambahkan kata baru.</p>
+            <div class="form-group">
+                <label for="newIndonesian">Bahasa Indonesia:</label>
+                <input type="text" id="newIndonesian" placeholder="Contoh: Makan">
+            </div>
+            <div class="form-group">
+                <label for="newTae">Bahasa Tae' (Luwu):</label>
+                <input type="text" id="newTae" placeholder="Contoh: Kumande">
+            </div>
+            <button id="addBtn">Simpan Kata</button>
+            <p id="addMessage" class="message"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
